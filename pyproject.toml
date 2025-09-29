@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calc-exam"
+version = "0.1.0"
+description = "Calculator kata with CI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+calc = "src.calculator.cli:main"
+
+[tool.isort]
+profile = "black"
